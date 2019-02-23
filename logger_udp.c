@@ -8,7 +8,6 @@
 #include <sys/socket.h> 
 #include <arpa/inet.h> 
 #include <netinet/in.h> 
-#include <time.h>
 
 #define PORT	 8080 
 #define MAXLINE 1024 
@@ -42,11 +41,6 @@ int main() {
 		exit(EXIT_FAILURE); 
 	} 
             
-        time_t rawtime;
-        struct tm * timeinfo;
-        time ( &rawtime );
-        timeinfo = localtime ( &rawtime );
-        char log[100];
 
         printf("logging the data from publishers and subscribers\n");
 	while(1){
@@ -56,10 +50,7 @@ int main() {
 				MSG_WAITALL, ( struct sockaddr *) &cliaddr, 
 				&len); 
 	    buffer[n] = '\0'; 
-
-            strcpy(log, asctime(timeinfo));
-            strcat(log, buffer);
-	    printf("%s\n\n", log); 
+	    printf("Client : %s\n", buffer); 
         }
 	
         close(sockfd);
