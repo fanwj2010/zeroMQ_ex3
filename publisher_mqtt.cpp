@@ -1,3 +1,6 @@
+//mqtt publisher
+//w.fan@kent.ac.uk
+
 #include <cstdio>
 #include <cstdlib>
 

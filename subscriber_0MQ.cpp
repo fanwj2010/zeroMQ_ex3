@@ -1,7 +1,5 @@
-//
-//  Pubsub envelope subscriber
-//
-// Olivier Chamoux <olivier.chamoux@fr.thalesgroup.com>
+// 0MQ subscriber
+// w.fan@kent.ac.uk
 #include "zhelpers.hpp"
 int main (int argc, char* argv[]) {
     if(argc<2){

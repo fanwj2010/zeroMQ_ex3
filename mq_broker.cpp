@@ -1,5 +1,5 @@
-//
-//
+//mq broker to bridge the mqtt and zeroMQ publishers and subscribers
+//w.fan@kent.ac.uk
 #include "zhelpers.hpp"
 #include <cstdio>
 #include <cstdlib>

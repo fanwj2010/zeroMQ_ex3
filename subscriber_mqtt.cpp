@@ -1,3 +1,6 @@
+//mqtt subscriber
+//w.fan@kent.ac.uk
+
 #include <cstdio>
 #include <cstdlib>
 
